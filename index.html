@@ -4,204 +4,9 @@
 	<link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <title> Zero Effort, More Value</title>
-<style>
-	.Header
-	{
-		position: absolute;
-		width:100%;
-		height:27px;
-		top: 0;
-		left: 0;
-		font-size: 14px;
-		font-family:Nimbus Sans L; 
-		color:white;
-		background-color:#4FC7C6;
-	}
-	.LeftHeader
-	{
-		float: left;
-		padding-left: 35px;
-		padding-top: 5px; 
-		height: 25px;
-	}
-	.RightHeader
-	{
-		float: right;
-		padding-top: 5px;
-		padding-right: 35px;
-		height: 25px;
-	}
-	.Top
-	{
-		position: absolute;
-		top:27px;
-		width:99%;
-		height:81px;
-		background-color:none;	
-		border: 20px;
-		border-color: black;
-	}
-	.Button
-	{
-		position: absolute;
-		top:22px;
-		left: 45px;
-		height: 39px;
-		width:120px;
-		padding-top:2px; 
-		background-color:#FF6375;
-		color: white;
-		border: 1px;
-		font-family:Nimbus Sans L; 
-	    font-weight: bolder;
-	    font-size: 14px;
-	    border-radius: 2px;
-	}
-	.Button:hover 
-	{
-    	background-color: #FF495F;
-    	box-shadow: 0px 8px 6px -7px #ccc;
-	}
-	.Logo
-	{
-		position: absolute;
-		top:0px;
-		left:550px;
-
-	}
-	.Login
-	{
-		position: absolute;
-		top:27px;
-		right:55px;
-		font-family:Nimbus Sans L; 
-	    font-size: 18px;
-	}
-	ul 
-	{
-		position: absolute;
-		top:93px;
-	    list-style-type: none;
-	    background-color:#aaeae9;
-	    left:38px;
-	}
-
-	li 
-	{
-	    float: left;
-	}
-	li a 
-	{
-	    display: block;
-	    color: black;
-	    font-family:Nimbus Sans L; 
-	    font-size: 14px;
-	    font-weight: bold;
-	    text-align: center;
-	    padding: 18px 26px;
-	    text-decoration: none;
-	}
-	li a:hover 
-	{
-	    background-color: #4FC7C6
-	}
-	.search-container 
-	{
-		margin-top:10px;
-		margin-left: 373px;
-  		float: right;
-  		padding: 1px;
-  		background-color: none;
-	}
-	.search-container input[type=text] 
-	{
-	    padding: 6px;
-	    width: 220px;
-	    margin-top: 3px;
-	 	margin-right: 12px;
-		border: 4px;
-		font-size: 14px;
-	}
-	.MainBody
-	{
-		position: absolute;
-		top:170px;
-		font-family:Nimbus Sans L; 
-	    font-size: 20px;
-	    font-weight: bold;
-	    text-align: left;
-	}
-	.Row1
-	{
-		padding-top: 10px;
-		padding-left: 29px;
-	}
-	.Row2
-	{
-		top:100px;
-		width:1250px;
-		height:360px;
-		background-color: none;
-	}
-	.Row2Left
-	{
-		padding-left: 27px;
-		float: left;
-	}
-	.Row2Right
-	{
-		padding-right: 22px;
-		float: right;
-	}
-	.dropbtn {
-    background-color: white/#4CAF50/;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    border:outset;
-    cursor: pointer;
-}
-.Random{
-	position: absolute;
-	top:800px;
-}
-.dropdown_button {
-	position: absolute;
-	top : 680px;
-	left : 45px;
-}
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}
-</style>
+<script type="text/javascript" src="script.js"></script>
 </head>
+<link rel = "stylesheet" type=" text/css" href = "style.css">
 <body>
 	<div class = "Header">
 		<div class = "LeftHeader">
@@ -250,68 +55,30 @@
 		</div>
 	&nbsp; &nbsp;&nbsp; &nbsp;LIMITED TIME SPECIAL OFFERS
 	</div>
-	<script>
-            $(document).ready(function(){
-            var chkArray = [];
-        function removebuttons(div) { 
-            while (div.firstChild) {
-             console.log("in log"); 
-             div.removeChild(div.firstChild);
-            } 
-        }
-        function createbuttons($chkArray){
-            console.log("in button");
-            var div = document.getElementById('insert');
-            removebuttons(div);
-            for (var i in chkArray){
-                 console.log(chkArray[i]);
-                 var btn = document.createElement('button');
-                 var txt = document.createTextNode(chkArray[i]);
-                 btn.appendChild(txt);
-                 btn.setAttribute('type', 'button');
-                 btn.setAttribute('class','filterbuttons');
-                 div.appendChild(btn);
-            }
-        }
-        $(".chk").click(function() {
-            console.log("in log"); 
-            console.log($(this).is(":checked"));
-            if($(this).is(":checked")) {
-                chkArray.push($(this).val()); 
-                createbuttons(chkArray); 
-                console.log(chkArray);
-            } else{
-                chkArray = chkArray.filter(item => item !== $(this).val()); 
-                createbuttons(chkArray);
-                console.log("in else");
-            }
-        });
-    });
-    </script>
 	<div class="dropdown_button">
             <br>
             <div class="dropdown">
-               <button class="dropbtn">Condition</button>
+               <button class="dropbtn">CONDITION</button>
               <div class="dropdown-content">
                 <input type="checkbox" class="chk" value="unboxed" autocomplete="off">Unboxed
                 <br>
-                <input type="checkbox" class="chk" value="wellused" autocomplete="off" />Well Used
+                <input type="checkbox" class="chk" value="wellUsed" autocomplete="off" />Well Used
                 <br>
-                <input type="checkbox" class="chk" value="likenew" autocomplete="off"/>Like New
+                <input type="checkbox" class="chk" value="likeNew" autocomplete="off"/>Like New
               </div>
             </div>
             <div class="dropdown">
-              <button class="dropbtn">Price</button>
+              <button class="dropbtn">PRICE</button>
               <div class="dropdown-content">
                 <input type="checkbox" class="chk" value="Rs. 0-5000" autocomplete="off">Rs. 0-5000
                 <br>
                 <input type="checkbox" class="chk" value="Rs. 5001-10000" autocomplete="off"/>Rs. 5001-10000
                 <br>
-                <input type="checkbox" class="chk" value="Rs. > 10000" autocomplete="off"/>Rs. > 10000
+                <input type="checkbox" class="chk" value="Rs. >10000" autocomplete="off"/>Rs. > 10000
               </div>
             </div>
             <div class="dropdown">
-              <button class="dropbtn">Category</button>
+              <button class="dropbtn">CATEGORY</button>
               <div class="dropdown-content">
                 <input type="checkbox" class="chk" value="sofa" autocomplete="off">Sofas
                 <br> 
@@ -322,7 +89,11 @@
             </div>
         </div>
         <div class="Random">
-        <div id="insert"></div>
+        	<div id="line"></div>
+        	<div id="insert"></div>
+        </div>
+        <div class= "Footer">
+        	Trying to be ZEFO Homepage...!!
         </div>
 
 	</body>
