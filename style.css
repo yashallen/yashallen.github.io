@@ -162,14 +162,19 @@
 	    	padding: 9px;
 	    	font-size: 16px;
 			color: black;
+			margin-right: 12px;
 			background-color: #ccccff;
 			border: 1px solid black;
 			font-family:Nimbus Sans L; 
+	}
+	.filterButton {
+		padding: 12px;
 	}
 .Random{
 	position: absolute;
 	top:780px;
 	left: 45px;
+	width: 999px;
 }
 .dropdown_button {
 	position: absolute;
@@ -192,7 +197,7 @@
 }
 .Footer{
 	position: absolute;
-	top: 860px;
+	top: 880px;
 	left:45px;
 	font-family:Nimbus Sans L; 
 	font-size: 30px;
@@ -215,11 +220,6 @@
     background-color: #4FC7C6;
     color: black;
 }
-.Random {
-	padding-left: 45px;
-	height: 70px;
-	width:999px;
-	}
 .clear {
 		padding-left: 20px;
 	    font-family:Nimbus Sans L; 

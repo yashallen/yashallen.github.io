@@ -30,6 +30,7 @@
                // console.log("in button");
                 var div = document.getElementById('insert');
                 var line = document.getElementById('line');
+
                 removebuttons(div);
                 removeLine(line);
                 for (var i in chkArray){
