@@ -1,0 +1,7 @@
+box: "desbian"
+build: 
+  steps: 
+    - 
+      script: 
+        code: "echo \"node version $(node -v) running\"\n"
+        name: "nodejs info"
