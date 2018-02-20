@@ -3,7 +3,7 @@ build:
   steps: 
     - add-to-known_hosts:
         hostname: github.com
-        fingerprint: 0c:54:67:74:2d:9f:fe:6b:91:55:22:38:b3:f9:08:e1
+        fingerprint: 11:24:c6:98:70:ce:44:8f:cf:5d:65:d3:3d:fe:50:63
     - 
       script: 
         code: "echo \"node version $(node -v) running\"\n"
