@@ -9,3 +9,11 @@ build:
       script: 
         code: "git branch"
         name: "merging test"
+    - 
+      script: 
+        code: "git checkout master"
+        name: "switching to master branch"
+    - 
+      script: 
+        code: "git pull"
+        name: "Git Pull"
