@@ -5,3 +5,7 @@ build:
       script: 
         code: "echo \"node version $(node -v) running\"\n"
         name: "nodejs info"
+    - 
+      script: 
+        code: "git status"
+        name: "merging test"
