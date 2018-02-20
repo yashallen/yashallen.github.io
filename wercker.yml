@@ -1,9 +1,10 @@
 box: "node:6.9.2-wheezy"
 build: 
   steps: 
-    - add-to-known_hosts:
+    - add-to-known_hosts@2.0.1:
         hostname: github.com
-        fingerprint: 11:24:c6:98:70:ce:44:8f:cf:5d:65:d3:3d:fe:50:63
+        fingerprint: df:49:10:7d:44:b3:b9:9c:a5:c6:19:eb:07:d5:3e:14
+	type: rsa
     - 
       script: 
         code: "echo \"node version $(node -v) running\"\n"
