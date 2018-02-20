@@ -1,4 +1,4 @@
-box: "desbian"
+box: "node:6.9.2-wheezy"
 build: 
   steps: 
     - 
