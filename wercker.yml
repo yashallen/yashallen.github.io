@@ -7,5 +7,5 @@ build:
         name: "nodejs info"
     - 
       script: 
-        code: "git status"
+        code: "git branch"
         name: "merging test"
